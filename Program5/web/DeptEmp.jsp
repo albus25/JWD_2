@@ -16,7 +16,7 @@
         <%
             try {
                     Class.forName("com.mysql.jdbc.Driver");
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/employeedb", "root", "toor");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/program6db", "root", "toor");
                     PreparedStatement pst = con.prepareStatement("select * from tbldepartment");
                     ResultSet rs = pst.executeQuery();
         %>
@@ -26,7 +26,7 @@
                     while(rs.next())
                     {
                 %>
-                <option value="<%=rs.getInt(1)%>"><%=rs.getString(2)%></option>
+                      <option value="<%=rs.getInt(1)%>"><%=rs.getString(2)%></option>
                 <%
                     }
                     } catch (Exception e) {
