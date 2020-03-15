@@ -16,7 +16,7 @@
         <%
             try {
                     Class.forName("com.mysql.jdbc.Driver");
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/employeedb","root","toor");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost/program6db","root","toor");
                     String deptID = request.getParameter("did");
                     String empName = request.getParameter("emp");
 //                    out.println("Emp:"+empName);
